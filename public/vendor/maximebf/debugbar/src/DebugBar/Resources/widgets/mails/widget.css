@@ -1,0 +1,13 @@
+
+div.phpdebugbar-widgets-mails span.phpdebugbar-widgets-subject {
+  display: block;
+}
+
+div.phpdebugbar-widgets-mails li.phpdebugbar-widgets-list-item pre.phpdebugbar-widgets-headers {
+  display: none;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndpZGdldC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGFBQWE7RUFDYixZQUFZO0VBQ1osWUFBWTtFQUNaLHNCQUFzQjtFQUN0QixxRkFBcUY7QUFDdkYiLCJmaWxlIjoid2lkZ2V0LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxuZGl2LnBocGRlYnVnYmFyLXdpZGdldHMtbWFpbHMgc3Bhbi5waHBkZWJ1Z2Jhci13aWRnZXRzLXN1YmplY3Qge1xuICBkaXNwbGF5OiBibG9jaztcbn1cblxuZGl2LnBocGRlYnVnYmFyLXdpZGdldHMtbWFpbHMgbGkucGhwZGVidWdiYXItd2lkZ2V0cy1saXN0LWl0ZW0gcHJlLnBocGRlYnVnYmFyLXdpZGdldHMtaGVhZGVycyB7XG4gIGRpc3BsYXk6IG5vbmU7XG4gIG1hcmdpbjogMTBweDtcbiAgcGFkZGluZzogNXB4O1xuICBib3JkZXI6IDFweCBzb2xpZCAjZGRkO1xuICBmb250LWZhbWlseTogXCJTRk1vbm8tUmVndWxhclwiLCBDb25zb2xhcywgXCJMaWJlcmF0aW9uIE1vbm9cIiwgTWVubG8sIENvdXJpZXIsIG1vbm9zcGFjZTtcbn1cbiJdfQ== */
