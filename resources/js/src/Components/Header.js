@@ -1,8 +1,5 @@
 import React, {Component, lazy} from 'react';
 import PropTypes from 'prop-types';
-
-
-
 import {Link} from "react-router-dom";
 
 class Header extends Component {
@@ -20,12 +17,6 @@ class Header extends Component {
         }
     };
 
-    searchHandler = obj => {
-        this.setState({
-            search: obj.value,
-        });
-    };
-
     componentDidMount() {
         document.addEventListener('scroll', this.scrollHandler);
     }
@@ -35,7 +26,6 @@ class Header extends Component {
     }
 
     render() {
-        const {cart, like, poll} = this.state;
 
         return (
             <header>
