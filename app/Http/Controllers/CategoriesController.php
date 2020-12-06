@@ -38,10 +38,17 @@ class CategoriesController extends Controller
         return $this->responseSuccess(null, 204);
     }
 
-    public function responseSuccess($data, $code) {
+    public function responseSuccess($data, $code=200) {
         return response()->json([
             'success' => true,
             'payload' => $data
         ], $code);
+    }
+
+    public function responseFail($message) {
+        return response()->json([
+            'success' => false,
+            'error' => $message
+        ], 200);
     }
 }
