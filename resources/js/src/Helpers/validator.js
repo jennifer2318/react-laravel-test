@@ -50,7 +50,7 @@ export const validatePassword = (value) => {
     if (validator.valid === false) return validator;
 
     // const complexPasswordPattern = /(?=(.*[0-9]))(?=.*[\!@#$%^&*()\\[\]{}\-_+=~`|:;"'<>,./?])(?=.*[a-z])(?=(.*[A-Z]))(?=(.*)).{8,}/; // Should have 1 lowercase letter, 1 uppercase letter, 1 number, 1 special character and be at least 8 characters long
-    const moderatePasswordPattern = /^([a-zA-Zа-яА-Я0-9._%-]+@[a-zA-Zа-яА-Я0-9.-]+\.[a-zA-Zа-яА-Я]{2,6})*$/; // Should have 1 lowercase letter, 1 uppercase letter, 1 number, and be at least 8 characters long
+    const moderatePasswordPattern = /(?=(.*[0-9]))((?=.*[A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z]))^.{8,}$/; // Should have 1 lowercase letter, 1 uppercase letter, 1 number, and be at least 8 characters long
 
     if (!moderatePasswordPattern.test(value)) return {valid: false, err: `Пароль должен состоять из 1 строчной буквы, 1 прописной буквы, 1 цифры и состоять не менее чем из 8 символов`};
 

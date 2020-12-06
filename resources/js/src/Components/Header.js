@@ -31,12 +31,14 @@ class Header extends Component {
             <header>
 
                 <div className="header header-main">
-
                     <div className="container">
                         <div className="header__row">
-
-
-
+                            <Link to='/'>
+                                <button className='button menu__link'>Главная</button>
+                            </Link>
+                            <Link to='/'>
+                                <button className='button menu__link'>Войти</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -45,7 +47,12 @@ class Header extends Component {
                     <div className="header__fixed" ref={this.headerFixed}>
                         <div className="container">
                             <div className="header__row">
-
+                                <Link to='/'>
+                                    <button className='button'>Главная</button>
+                                </Link>
+                                <Link to='/'>
+                                    <button className='button'>Войти</button>
+                                </Link>
                             </div>
                         </div>
                     </div>

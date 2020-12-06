@@ -111,7 +111,7 @@ class Field extends Component {
                     label ? <label htmlFor={id}>{icon || null}{label}</label> : null
                 }
                 <div className='input__container'>
-                    <input className={classNames(`${type}__input`)} readOnly={locked} type={type} name={name} placeholder={placeholder} onChange={this.changeHandler} value={value}/>
+                    <input className={classNames(`${type}__input`, 'input__input')} readOnly={locked} type={type} name={name} placeholder={placeholder} onChange={this.changeHandler} value={value}/>
                     {btn || null}
                 </div>
                 {
