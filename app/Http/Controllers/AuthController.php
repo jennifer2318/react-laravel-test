@@ -44,6 +44,6 @@ class AuthController extends Controller
         return response()->json([
             'success' => false,
             'error' => $message
-        ], 200);
+        ], 400);
     }
 }

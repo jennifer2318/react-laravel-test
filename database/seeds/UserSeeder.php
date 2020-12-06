@@ -15,7 +15,7 @@ class UserSeeder extends Seeder
     {
         DB::table('users')->insert([
             'email' => 'admin@test.ru',
-            'password' => '$2y$10$z1ujInWp2r5Y.KPM7I/nDeoEF25PjJbv6bMJcYrNjf/F4/BCIpNyK', //admin
+            'password' => '$2y$10$3mn2OgdMU0nDkTjSRrhyA.1q6E7w9fpjS.K1doZm1Ky6hDkxkJgui', //dw9OVNQifGjJEPT
             User::CREATED_AT => Carbon::now(),
             User::UPDATED_AT => Carbon::now(),
         ]);
