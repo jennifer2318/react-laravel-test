@@ -62,6 +62,27 @@ class Handler extends ExceptionHandler
             ], 404);
         }
 
+        switch (class_basename($exception)) {
+            case 'ModelNotFoundException': {
+                return response()->json([
+                    'success' => false,
+                    'error' => 'Resource not found',
+                ], 404);
+            }break;
+            case 'NotFoundHttpException': {
+                return response()->json([
+                    'success' => false,
+                    'error' => 'Resource not found',
+                ], 404);
+            }break;
+            case 'MethodNotAllowedHttpException': {
+                return response()->json([
+                    'success' => false,
+                    'error' => 'Method Not Allowed',
+                ], 405);
+            }break;
+        }
+
         return parent::render($request, $exception);
     }
 }
