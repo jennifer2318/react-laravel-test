@@ -13,3 +13,21 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+
+Route::post('/auth');
+
+Route::middleware(['App\Http\Middleware\VerifyJWT'])->group(function () {
+    Route::get('/products', 'ProductsController@index');
+    Route::post('/products', 'ProductsController@store');
+    Route::get('/products/{product}', 'ProductsController@get');
+    Route::put('/products/{product}', 'ProductsController@update');
+    Route::delete('/products/{product}', 'ProductsController@delete');
+});
+
+Route::middleware(['App\Http\Middleware\VerifyJWT'])->group(function () {
+    Route::get('/categories', 'CategoriesController@index');
+    Route::post('/categories', 'CategoriesController@store');
+    Route::get('/categories/{category}', 'CategoriesController@get');
+    Route::put('/categories/{category}', 'CategoriesController@update');
+    Route::delete('/categories/{category}', 'CategoriesController@delete');
+});
